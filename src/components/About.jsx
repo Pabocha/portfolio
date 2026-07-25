@@ -23,7 +23,7 @@ export default function About() {
       <div className="grid md:grid-cols-2 gap-16 items-center">
         {/* Visual */}
         <div
-          className="reveal-left aspect-square rounded-2xl border border-white/[0.07] flex items-center justify-center text-8xl relative overflow-hidden"
+          className="reveal-left aspect-square rounded-2xl flex items-center justify-center text-8xl relative overflow-hidden border border-base-content/10"
           style={{
             background:
               "linear-gradient(135deg, rgba(59,130,246,0.15), rgba(124,58,237,0.2))",
@@ -47,13 +47,13 @@ export default function About() {
             highlight="code propre"
           />
 
-          <p className="text-slate-400 leading-relaxed mb-4 text-[0.95rem]">
+          <p className="text-base-content/50 leading-relaxed mb-4 text-[0.95rem]">
             Développeur Full-Stack avec plus de 2 ans d'expérience dans la
             création d'applications web scalables et performantes et 1 an
             d'expérience dans le développement mobile. J'aime travailler à
             l'intersection du design et de l'ingénierie.
           </p>
-          <p className="text-slate-400 leading-relaxed mb-6 text-[0.95rem]">
+          <p className="text-base-content/50 leading-relaxed mb-6 text-[0.95rem]">
             Mon approche : comprendre le problème avant d'écrire la première
             ligne, puis livrer une solution qui dure. Je suis à l'aise aussi
             bien côté serveur que côté client.
@@ -63,7 +63,7 @@ export default function About() {
             {pills.map((p) => (
               <span
                 key={p}
-                className="px-3 py-1 rounded-full text-xs text-slate-400 border border-white/[0.07] bg-white/[0.03]"
+                className="px-3 py-1 rounded-full text-xs text-base-content/50 border border-base-content/10 bg-base-content/5"
               >
                 {p}
               </span>

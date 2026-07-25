@@ -1,83 +1,29 @@
 import SectionHeader from "./SectionHeader";
+import reactIcon from "../assets/techno/react.png";
+import jsIcon from "../assets/techno/js.png";
+import pythonIcon from "../assets/techno/python.webp";
+import djangoIcon from "../assets/techno/django.svg";
+import flutterIcon from "../assets/techno/flutter.svg";
+import htmlIcon from "../assets/techno/html.png";
+import cssIcon from "../assets/techno/css.png";
+import postgresqlIcon from "../assets/techno/postgresql.jpg";
+import dockerIcon from "../assets/techno/docker.webp";
+import wordpressIcon from "../assets/techno/wordpress.webp";
+import tailwindIcon from "../assets/techno/tailwind.png";
 
 const skills = [
-  {
-    icon: "./src/assets/techno/react.png",
-    name: "React.js",
-    category: "Front-end • UI/UX",
-    level: 92,
-  },
-  {
-    icon: "./src/assets/techno/js.png",
-    name: "JavaScript",
-    category: "Back-end • API REST",
-    level: 88,
-  },
-  {
-    icon: "./src/assets/techno/python.webp",
-    name: "Python",
-    category: "Typage • Architecture",
-    level: 85,
-  },
-  {
-    icon: "./src/assets/techno/django.svg",
-    name: "Django / DRF",
-    category: "Deploy • Scalabilité",
-    level: 70,
-  },
-  {
-    icon: "./src/assets/techno/flutter.svg",
-    name: "Flutter",
-    category: "Deploy • Scalabilité",
-    level: 70,
-  },
-  {
-    icon: "./src/assets/techno/html.png",
-    name: "HTML5",
-    category: "Deploy • Scalabilité",
-    level: 70,
-  },
-  {
-    icon: "./src/assets/techno/css.png",
-    name: "CSS3",
-    category: "Deploy • Scalabilité",
-    level: 70,
-  },
-  {
-    icon: "./src/assets/techno/postgresql.jpg",
-    name: "PostgreSQL / MySQL",
-    category: "Base de données • ORM",
-    level: 80,
-  },
-  {
-    icon: "./src/assets/techno/docker.webp",
-    name: "Docker / DevOps",
-    category: "CI/CD • Infrastructure",
-    level: 75,
-  },
-
-  {
-    icon: "./src/assets/techno/wordpress.webp",
-    name: "WordPress",
-    category: "Deploy • Scalabilité",
-    level: 70,
-  },
-
-  {
-    icon: "./src/assets/techno/tailwind.png",
-    name: "Tailwind.css",
-    category: "Deploy • Scalabilité",
-    level: 70,
-  },
+  { icon: reactIcon, name: "React.js", category: "Front-end • UI/UX", level: 92 },
+  { icon: jsIcon, name: "JavaScript", category: "Back-end • API REST", level: 88 },
+  { icon: pythonIcon, name: "Python", category: "Typage • Architecture", level: 85 },
+  { icon: djangoIcon, name: "Django / DRF", category: "Back-end • API REST", level: 70 },
+  { icon: flutterIcon, name: "Flutter", category: "Mobile • Cross-platform", level: 70 },
+  { icon: htmlIcon, name: "HTML5", category: "Markup • Sémantique", level: 70 },
+  { icon: cssIcon, name: "CSS3", category: "Styles • Responsive", level: 70 },
+  { icon: postgresqlIcon, name: "PostgreSQL / MySQL", category: "Base de données • ORM", level: 80 },
+  { icon: dockerIcon, name: "Docker / DevOps", category: "CI/CD • Infrastructure", level: 75 },
+  { icon: wordpressIcon, name: "WordPress", category: "CMS • No-code/Low-code", level: 70 },
+  { icon: tailwindIcon, name: "Tailwind.css", category: "CSS • Utility-first", level: 70 },
 ];
-// const skills = [
-//   { icon: '⚛️', name: 'React / Next.js', category: 'Front-end • UI/UX', level: 92 },
-//   { icon: '🟢', name: 'Node.js / Express', category: 'Back-end • API REST', level: 88 },
-//   { icon: '🔷', name: 'TypeScript', category: 'Typage • Architecture', level: 85 },
-//   { icon: '🐘', name: 'PostgreSQL / MongoDB', category: 'Base de données • ORM', level: 80 },
-//   { icon: '🐳', name: 'Docker / DevOps', category: 'CI/CD • Infrastructure', level: 75 },
-//   { icon: '☁️', name: 'AWS / Cloud', category: 'Deploy • Scalabilité', level: 70 },
-// ]
 
 export default function Skills() {
   return (
@@ -92,24 +38,15 @@ export default function Skills() {
         {skills.map((s, i) => (
           <div
             key={s.name}
-            className={`reveal delay-${(i % 3) + 1} p-6 rounded-2xl border border-white/[0.07] bg-white/[0.03] hover:border-violet-500/40 hover:-translate-y-1 transition-all duration-300`}
+            className={`reveal delay-${(i % 3) + 1} p-6 rounded-2xl border border-base-content/10 bg-base-content/5 hover:-translate-y-1 transition-all duration-300`}
           >
-            {/* <div
-              className="w-11 h-11 rounded-xl flex items-center justify-center text-xl mb-4"
-              style={{
-                background:
-                  "linear-gradient(135deg, rgba(59,130,246,0.2), rgba(124,58,237,0.2))",
-              }}
-            >
-              {s.icon}
-            </div> */}
             <div>
-              <img src={s.icon} alt="" className="w-12" />
+              <img src={s.icon} alt={s.name} className="w-12" />
             </div>
-            <div className="font-semibold text-slate-100 mb-1">{s.name}</div>
-            <div className="text-xs text-slate-500 mb-3">{s.category}</div>
+            <div className="font-semibold text-base-content mb-1">{s.name}</div>
+            <div className="text-xs text-base-content/40 mb-3">{s.category}</div>
 
-            <div className="h-1 bg-white/[0.07] rounded-full overflow-hidden">
+            <div className="h-1 bg-base-content/10 rounded-full overflow-hidden">
               <div
                 className="skill-bar h-full rounded-full"
                 style={{

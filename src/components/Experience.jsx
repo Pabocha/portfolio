@@ -2,28 +2,22 @@ import SectionHeader from './SectionHeader'
 
 const experiences = [
   {
-    period: '2025 — Présent',
+    period: '2024 — 2026',
     role: 'Développeur Full-Stack',
     company: 'Daveprocode — Dakar, Sénégal',
-    desc: "Chef d'une équipe de 4 développeurs. Refonte complète de l'architecture micro-services, réduction de 40% des temps de chargement.",
+    desc: "Développement d'applications web et mobile au sein d'une équipe de 4 développeurs. Réalisation d'EatSafe, une application de restauration au Cameroun avec paiements Orange et MTN et navigation Google Maps pour les livreurs. Développement d'une application de gestion scolaire multi-tenant avec Django REST Framework et PostgreSQL (schémas partagés, base unique). Participation au développement d'une application immobilière avec recherche de logements et paiement en ligne, ainsi que de l'application Bricolibe.",
   },
   {
-    period: '2023 — Présent',
-    role: 'Développeur Full-Stack Senior',
-    company: 'TechCorp SAS — Paris, France',
-    desc: "Lead technique d'une équipe de 4 développeurs. Refonte complète de l'architecture micro-services, réduction de 40% des temps de chargement.",
+    period: '2025 — 2026 (Mission Freelance)',
+    role: 'Chef de projet Freelance',
+    company: 'Am\'net — Dakar, Sénégal',
+    desc: "Chef de projet freelance. Développement de sites WordPress et WooCommerce pour des clients sénégalais. Réalisation du site e-commerce Katra et d'un site d'investissement, avec intégration de paiement en ligne.",
   },
   {
-    period: '2021 — 2023',
-    role: 'Développeur Full-Stack',
-    company: 'StartupX — Dakar, Sénégal',
-    desc: 'Développement de plusieurs features clés du produit SaaS. Mise en place des tests automatisés et du pipeline CI/CD.',
-  },
-  {
-    period: '2023',
+    period: '2023 (Février — Mai)',
     role: 'Développeur Front-End Junior',
     company: 'BG-ITSMART — Dakar, Sénégal',
-    desc: 'Développement du site ecommerce de la boite avec WordPress et intégration de paiement en ligne',
+    desc: 'Développement du site ecommerce de la boite avec WordPress et intégration de paiement en ligne, installations de windows server dans des serveurs, installations de camera de surveillance et de système de sécurité, installations de système de vidéosurveillance et de sécurité.',
   },
 ]
 
@@ -43,17 +37,17 @@ export default function Experience() {
           <div key={e.role} className={`reveal delay-${i + 1} relative pb-12 pl-8`}>
             {/* Dot */}
             <div
-              className="absolute -left-[1.38rem] top-1 w-3.5 h-3.5 rounded-full border-2 border-[#05060f]"
+              className="absolute -left-[1.38rem] top-1 w-3.5 h-3.5 rounded-full border-2 border-base-100"
               style={{
                 background: 'linear-gradient(135deg, #3b82f6, #7c3aed)',
                 boxShadow: '0 0 0 3px rgba(124,58,237,0.3)',
               }}
             />
 
-            <p className="text-violet-500 text-xs font-semibold uppercase tracking-widest mb-1">{e.period}</p>
-            <h3 className="font-display font-bold text-slate-100 text-xl mb-1">{e.role}</h3>
-            <p className="text-slate-500 text-sm mb-3">{e.company}</p>
-            <p className="text-slate-400 text-sm leading-relaxed">{e.desc}</p>
+            <p className="text-primary text-xs font-semibold uppercase tracking-widest mb-1">{e.period}</p>
+            <h3 className="font-display font-bold text-base-content text-xl mb-1">{e.role}</h3>
+            <p className="text-base-content/40 text-sm mb-3">{e.company}</p>
+            <p className="text-base-content/50 text-sm leading-relaxed">{e.desc}</p>
           </div>
         ))}
       </div>

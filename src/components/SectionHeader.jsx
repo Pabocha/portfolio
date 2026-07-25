@@ -1,8 +1,8 @@
 export default function SectionHeader({ tag, title, highlight }) {
   return (
     <div className="reveal mb-12">
-      <p className="text-violet-500 text-xs font-semibold uppercase tracking-widest mb-2">{tag}</p>
-      <h2 className="font-display font-extrabold text-slate-100 mb-4" style={{ fontSize: 'clamp(2rem, 4vw, 2.8rem)', lineHeight: 1.1 }}>
+      <p className="text-primary text-xs font-semibold uppercase tracking-widest mb-2">{tag}</p>
+      <h2 className="font-display font-extrabold text-base-content mb-4" style={{ fontSize: 'clamp(2rem, 4vw, 2.8rem)', lineHeight: 1.1 }}>
         {title}{' '}
         {highlight && <span className="grad-text">{highlight}</span>}
       </h2>

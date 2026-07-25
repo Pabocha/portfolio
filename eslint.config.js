@@ -18,4 +18,14 @@ export default defineConfig([
       parserOptions: { ecmaFeatures: { jsx: true } },
     },
   },
+  {
+    files: ['src/context/**', 'src/hooks/**'],
+    rules: { 'react-refresh/only-export-components': 'off' },
+  },
+  {
+    files: ['tailwind.config.js', 'postcss.config.js', 'eslint.config.js'],
+    languageOptions: {
+      globals: { ...globals.node },
+    },
+  },
 ])

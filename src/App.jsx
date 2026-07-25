@@ -1,15 +1,16 @@
+import { ThemeProvider } from './context/ThemeContext'
 import { useScrollReveal } from './hooks/useScrollReveal'
 import ParticleCanvas from './components/ParticleCanvas'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
-import Projects from './components/Projects'
+import Projects from './components/projects/Projects'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
-export default function App() {
+function AppContent() {
   useScrollReveal()
 
   return (
@@ -36,5 +37,13 @@ export default function App() {
         <Footer />
       </div>
     </div>
+  )
+}
+
+export default function App() {
+  return (
+    <ThemeProvider>
+      <AppContent />
+    </ThemeProvider>
   )
 }
