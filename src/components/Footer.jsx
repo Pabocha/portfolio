@@ -4,7 +4,7 @@ export default function Footer() {
       <p>
         Conçu & développé par{' '}
         <span className="grad-text font-semibold">Pablo.dev</span>{' '}
-        · 2025 · Dakar, Sénégal
+        · 2026 · Dakar, Sénégal
       </p>
     </footer>
   )
