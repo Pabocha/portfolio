@@ -1,4 +1,5 @@
 import SectionHeader from "./SectionHeader";
+import profil from "../assets/profil.jpg";
 
 const pills = [
   "Python",
@@ -36,7 +37,7 @@ export default function About() {
                 "radial-gradient(circle at 30% 40%, rgba(59,130,246,0.25), transparent 60%), radial-gradient(circle at 70% 70%, rgba(124,58,237,0.25), transparent 60%)",
             }}
           />
-          <img src="/src/assets/profil.jpg" alt="Profil" className="absolute inset-0 w-full h-full object-cover" />
+          <img src={profil} alt="Profil" className="absolute inset-0 w-full h-full object-cover" />
         </div>
 
         {/* Text */}
