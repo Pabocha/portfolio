@@ -13,7 +13,7 @@ import tailwindIcon from "../assets/techno/tailwind.png";
 
 const skills = [
   { icon: reactIcon, name: "React.js", category: "Front-end • UI/UX", level: 92 },
-  { icon: jsIcon, name: "JavaScript", category: "Back-end • API REST", level: 88 },
+  { icon: jsIcon, name: "JavaScript", category: "Front-end • UI/UX", level: 88 },
   { icon: pythonIcon, name: "Python", category: "Typage • Architecture", level: 85 },
   { icon: djangoIcon, name: "Django / DRF", category: "Back-end • API REST", level: 70 },
   { icon: flutterIcon, name: "Flutter", category: "Mobile • Cross-platform", level: 70 },

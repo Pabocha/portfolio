@@ -7,7 +7,7 @@ import githubIcon from '../assets/icon/logo-github.png'
 
 const contactItems = [
   { icon: emailIcon, label: 'Email', value: 'ppabocha03@gmail.com', href: 'mailto:ppabocha03@gmail.com' },
-  { icon: locationIcon, label: 'Localisation', value: 'Dakar, Sénégal' },
+  { icon: locationIcon, label: 'Localisation', value: 'Liberté 6 Dakar, Sénégal' },
   { icon: githubIcon, label: 'GitHub', value: 'github.com/Pabocha', href: 'https://github.com/Pabocha' },
 ]
 

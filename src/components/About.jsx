@@ -36,7 +36,7 @@ export default function About() {
                 "radial-gradient(circle at 30% 40%, rgba(59,130,246,0.25), transparent 60%), radial-gradient(circle at 70% 70%, rgba(124,58,237,0.25), transparent 60%)",
             }}
           />
-          <span className="relative z-10">🧑‍💻</span>
+          <img src="/src/assets/profil.jpg" alt="Profil" className="absolute inset-0 w-full h-full object-cover" />
         </div>
 
         {/* Text */}

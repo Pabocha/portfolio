@@ -22,6 +22,16 @@ import brico4 from "../../assets/project/brico4.png";
 import og1 from "../../assets/project/og1.png";
 import og2 from "../../assets/project/og2.png";
 import ng from "../../assets/project/ng.jpeg";
+import ng2 from "../../assets/project/ng2.jpeg";
+import ng3 from "../../assets/project/ng3.jpeg";
+import ng4 from "../../assets/project/ng4.jpeg";
+import ng5 from "../../assets/project/ng5.jpeg";
+import ng6 from "../../assets/project/ng6.jpeg";
+import ng7 from "../../assets/project/ng7.jpeg";
+import ng8 from "../../assets/project/ng8.jpeg";
+import ng9 from "../../assets/project/ng9.jpeg";
+import ng10 from "../../assets/project/ng10.jpeg";
+import eatsafe from "../../assets/project/eatsafe.png";
 import placeholder from "../../assets/project/placeholder.svg";
 
 export const projects = [
@@ -56,6 +66,7 @@ export const projects = [
 
   {
     cover: ng,
+    gallery: [ng9, ng2, ng5, ng3, ng6, ng4, ng7, ng8, ng10],
     tags: [
       { label: "Flutter", cls: "bg-cyan-500/20 text-cyan-400" },
       { label: "GetX", cls: "bg-green-500/20 text-green-400" },
@@ -83,7 +94,7 @@ export const projects = [
 
 
   {
-    cover: ecom1,
+    cover: eatsafe,
     tags: [
       { label: "Flutter", cls: "bg-cyan-500/20 text-cyan-400" },
       { label: "Firebase", cls: "bg-green-500/20 text-green-400" },
@@ -160,8 +171,11 @@ export const projects = [
     cover: immo1,
     gallery: [immo2, immo3],
     tags: [
-      { label: "WordPress", cls: "bg-blue-500/20 text-blue-400" },
-      { label: "PHP", cls: "bg-violet-500/20 text-violet-400" },
+      { label: "Django", cls: "bg-green-500/20 text-green-400" },
+      { label: "MySQL", cls: "bg-violet-500/20 text-violet-400" },
+      { label: "Bootstrap", cls: "bg-blue-500/20 text-blue-400" },
+      { label: "Celery", cls: "bg-cyan-500/20 text-cyan-400" },
+      { label: "Redis", cls: "bg-red-500/20 text-red-400" },
     ],
     title: "CoopérativeCP",
     desc: "Plateforme de coopérative immobilière offrant l'acquisition de logements via entraide et investissement au Sénégal.",
@@ -183,8 +197,10 @@ export const projects = [
     cover: brico1,
     gallery: [brico2, brico4],
     tags: [
-      { label: "WordPress", cls: "bg-blue-500/20 text-blue-400" },
-      { label: "PHP", cls: "bg-violet-500/20 text-violet-400" },
+      { label: "Django REST", cls: "bg-blue-500/20 text-blue-400" },
+      { label: "PostgreSQL", cls: "bg-green-500/20 text-green-400" },
+      { label: "Twilio", cls: "bg-pink-500/20 text-pink-400" },
+      { label: "React", cls: "bg-cyan-500/20 text-cyan-400" },
     ],
     title: "Bricolibe",
     desc: "Plateforme de mise en relation entre clients et artisans au Sénégal.",
@@ -207,7 +223,8 @@ export const projects = [
     gallery: [og2],
     tags: [
       { label: "WordPress", cls: "bg-blue-500/20 text-blue-400" },
-      { label: "PHP", cls: "bg-violet-500/20 text-violet-400" },
+      { label: "Astra", cls: "bg-orange-500/20 text-orange-400" },
+      { label: "Gutenberg", cls: "bg-cyan-500/20 text-cyan-400" },
     ],
     title: "Solutions Épileptiques",
     desc: "Site vitrine et collecte de fonds pour une fondation médicale luttant contre l'épilepsie sur l'île d'Idjwi.",
@@ -228,7 +245,7 @@ export const projects = [
     cover: placeholder,
     tags: [
       { label: "Django REST", cls: "bg-blue-500/20 text-blue-400" },
-      { label: "PostgreSQL", cls: "bg-blue-500/20 text-blue-400" },
+      { label: "PostgreSQL", cls: "bg-violet-500/20 text-violet-400" },
       { label: "React", cls: "bg-cyan-500/20 text-cyan-400" },
       { label: "Docker", cls: "bg-violet-500/20 text-violet-400" },
     ],
