@@ -163,7 +163,7 @@ export const projects = [
     ],
     challenge:
       "Le défi principal était de créer un site qui inspire confiance aux investisseurs potentiels tout en mettant en avant les opportunités d'investissement et l'accompagnement offert par la société.",
-    demo: "https://katrainvest.com/about/",
+    demo: "https://katrainvest.com",
   },
 
 
